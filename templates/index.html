@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Loan Price Prediction </title>
+</head>
+<body style="background-color:hwb(300 28% 31%) ;">
+    <h1> <b> Loan Price Prediction  </b> </h1>
+    <form method="GET" action="/predict_charges">
+
+
+
+        <label>credit_policy:</label>
+        <input type = "text" name = "credit_policy">
+        </select>
+
+        <br>
+        <br>
+
+        <label>int_rate:</label>
+        <input type = "text" name = "int_rate">
+        </select>
+
+
+        <label>installment:</label>
+        <input type = "text" name = "installment">
+        </select>
+
+        <br>
+        <br>
+
+        <label>log_annual_inc:</label>
+        <input type = "text" name = "log_annual_inc">
+        </select>
+
+        <label>dti:</label>
+        <input type = "text" name = "dti">
+        </select>
+
+        <br>
+        <br>
+
+        <label>fico:</label>
+        <input type = "text" name = "fico">
+        </select>
+
+        <label>days_with_cr_line:</label>
+        <input type = "text" name = "days_with_cr_line">
+        </select>
+
+        <br>
+        <br>
+        
+        <label>revol_bal:</label>
+        <input type = "text" name = "revol_bal">
+        </select>
+
+        <label>revol_util:</label>
+        <input type = "text" name = "revol_util">
+        </select>
+
+        <br>
+        <br>
+
+        <label>inq_last_6mths:</label>
+        <input type = "text" name = "inq_last_6mths">
+        </select>
+
+        <label>delinq_2yrs:</label>
+        <input type = "text" name = "delinq_2yrs">
+        </select>
+
+        <br>
+        <br>
+
+        <label>pub_rec:</label>
+        <input type = "text" name = "pub_rec">
+        </select>
+
+        <br>
+        <br>
+
+        
+        <lable>Purpose:</lable>
+        <select name="purpose">
+            <option value="credit_card">Credit_card</option>
+            <option value="debt_consolidation">Debt_consolidation</option>
+            <option value="educational">Educational</option>
+            <option value="home_improvement">Home_improvement</option>
+            <option value="major_purchase">Major_purchase</option>
+            <option value="small_business">Small_business</option>
+        </select>
+
+        <br>
+        <br>
+
+        <input type = "submit" value="SUBMIT">
+
+        <br>
+
+        <p> <b> {{ prediction }}  </b></p>
+       
+    
+
+        
+    </form>
+
+
+</body>
+</html>
+    
+
+
+
+
+
